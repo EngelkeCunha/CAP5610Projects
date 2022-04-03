@@ -5,16 +5,12 @@ Created on Sat Apr  2 16:22:13 2022
 @author: ronal
 """
 
-#Importing Required Libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import math as m
 import pandas as pd
 
-# np.random.seed(42)
-
 def randomCentroid(data):
-    #Creating k random indices and using the data point at that indices as centroid 
     centroids=[]
     random_cents=[np.random.randint(data.shape[0]) for i in range(10)]
     for point in random_cents:
